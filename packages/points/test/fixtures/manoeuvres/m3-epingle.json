@@ -1,0 +1,227 @@
+{
+  "origine": {
+    "lat": 46.0,
+    "lon": 0.0
+  },
+  "noteCoordonnees": "Sommets en mètres locaux [est, nord] depuis `origine` — c'est ce qui rend la fixture lisible à l'œil. Conversion : lat = origine.lat + nord/111320 ; lon = origine.lon + est/(111320·cos 46°) = origine.lon + est/77327,6.",
+  "cas": "M3 — courbe serrée, épingle, demi-tour",
+  "commentaire": "Trois objets que la géométrie seule confond, et que le NŒUD sépare. M3-a et M3-b sont une voie qui revient sur elle-même : ses propres sommets tracent l'arc, aucun nœud partagé ne porte la déflexion — ce sont des courbes, jugées à leur rayon. M3-c est un COIN de carrefour à 150° que le routeur a chanfreiné sur 3 m : une corde y lit « rayon 3,5 m », mais c'est l'arrondi du routeur, pas une courbure de route, et la voie n'a aucun sommet pour le confirmer.",
+  "variantes": [
+    {
+      "cas": "M3-a",
+      "titre": "épingle de 8 m de rayon, 170°",
+      "voies": [
+        {
+          "id": "w-epingle",
+          "nom": "Lacet",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "w-epingle:n0",
+            "w-epingle:n1",
+            "w-epingle:n2",
+            "w-epingle:n3",
+            "w-epingle:n4",
+            "w-epingle:n5",
+            "w-epingle:n6",
+            "w-epingle:n7",
+            "w-epingle:n8",
+            "w-epingle:n9",
+            "w-epingle:n10",
+            "w-epingle:n11",
+            "w-epingle:n12",
+            "w-epingle:n13",
+            "w-epingle:n14",
+            "w-epingle:n15",
+            "w-epingle:n16",
+            "w-epingle:n17",
+            "w-epingle:n18",
+            "w-epingle:n19",
+            "w-epingle:n20"
+          ],
+          "sommets": [
+            [0.0, -30.0],
+            [0.0, -15.0],
+            [0.0, 0.0],
+            [0.14, 1.48],
+            [0.54, 2.9],
+            [1.21, 4.22],
+            [2.1, 5.4],
+            [3.2, 6.4],
+            [4.46, 7.17],
+            [5.85, 7.7],
+            [7.3, 7.97],
+            [8.78, 7.96],
+            [10.24, 7.68],
+            [11.62, 7.14],
+            [12.87, 6.35],
+            [13.96, 5.34],
+            [14.84, 4.15],
+            [15.49, 2.82],
+            [15.88, 1.39],
+            [18.48, -13.38],
+            [21.09, -28.16]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Le routeur suit l'épingle ; un sommet tous les 5 m.",
+        "sommets": [
+          [0.0, -30.0],
+          [0.0, -15.0],
+          [0.0, 0.0],
+          [2.1, 5.4],
+          [7.3, 7.97],
+          [12.87, 6.35],
+          [15.88, 1.39],
+          [18.48, -13.38],
+          [21.09, -28.16]
+        ]
+      }
+    },
+    {
+      "cas": "M3-b",
+      "titre": "demi-tour de 3 m de rayon, 180° — la question du responsable produit",
+      "voies": [
+        {
+          "id": "w-demitour",
+          "nom": "Raquette",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "w-demitour:n0",
+            "w-demitour:n1",
+            "w-demitour:n2",
+            "w-demitour:n3",
+            "w-demitour:n4",
+            "w-demitour:n5",
+            "w-demitour:n6",
+            "w-demitour:n7",
+            "w-demitour:n8",
+            "w-demitour:n9",
+            "w-demitour:n10",
+            "w-demitour:n11",
+            "w-demitour:n12",
+            "w-demitour:n13",
+            "w-demitour:n14",
+            "w-demitour:n15",
+            "w-demitour:n16"
+          ],
+          "sommets": [
+            [0.0, -30.0],
+            [0.0, -15.0],
+            [0.0, 0.0],
+            [0.1, 0.78],
+            [0.4, 1.5],
+            [0.88, 2.12],
+            [1.5, 2.6],
+            [2.22, 2.9],
+            [3.0, 3.0],
+            [3.78, 2.9],
+            [4.5, 2.6],
+            [5.12, 2.12],
+            [5.6, 1.5],
+            [5.9, 0.78],
+            [6.0, 0.0],
+            [6.0, -15.0],
+            [6.0, -30.0]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Un sommet tous les 2 m : l'arc est bien dans le tracé.",
+        "sommets": [
+          [0.0, -30.0],
+          [0.0, -15.0],
+          [0.0, 0.0],
+          [0.88, 2.12],
+          [3.0, 3.0],
+          [5.12, 2.12],
+          [6.0, 0.0],
+          [6.0, -15.0],
+          [6.0, -30.0]
+        ]
+      }
+    },
+    {
+      "cas": "M3-c",
+      "titre": "coin de carrefour à 150° chanfreiné sur 3 m par le routeur",
+      "voies": [
+        {
+          "id": "w-entree",
+          "nom": "Rue d'Arrivée",
+          "largeurDeclareeM": 5.2,
+          "tags": {
+            "highway": "residential",
+            "width": "5.2"
+          },
+          "noeuds": [
+            "w-entree:n0",
+            "w-entree:n1",
+            "N"
+          ],
+          "sommets": [
+            [0, -80],
+            [0, -40],
+            [0, 0]
+          ]
+        },
+        {
+          "id": "w-sortie",
+          "nom": "Rue de Sortie",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N",
+            "w-sortie:n1",
+            "w-sortie:n2"
+          ],
+          "sommets": [
+            [0, 0],
+            [20.0, -34.64],
+            [40.0, -69.28]
+          ]
+        },
+        {
+          "id": "w-laterale",
+          "nom": "Rue Latérale",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N",
+            "w-laterale:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [-20.0, 34.64]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Même « rayon » apparent que M3-b, et rien à voir : l'apex est au nœud N, la route change de voie, et la géométrie de la voie n'a aucun sommet intermédiaire.",
+        "sommets": [
+          [0, -80],
+          [0, -40],
+          [0, -20],
+          [0, -3.0],
+          [0.45, -0.9],
+          [1.5, -2.6],
+          [20.0, -34.64],
+          [40.0, -69.28]
+        ]
+      }
+    }
+  ]
+}

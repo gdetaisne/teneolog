@@ -1,0 +1,32 @@
+{
+  "name": "teneolog-engine-showcase",
+  "private": true,
+  "type": "module",
+  "description": "Teneolog — moteur de livrabilité poids lourds (instantané public, lecture seule).",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b packages/domain packages/topology packages/road-width packages/swept-path packages/constraints packages/routes packages/points packages/projection packages/report packages/scenes packages/pipeline packages/adapters",
+    "typecheck": "npm run build",
+    "test": "npm run build && npm run test --workspaces --if-present",
+    "lint": "node scripts/lint-ratchet.mjs --check",
+    "lint:baseline": "node scripts/lint-ratchet.mjs --write",
+    "knip": "knip --no-exit-code",
+    "knip:check": "node scripts/knip-ratchet.mjs --check",
+    "knip:baseline": "node scripts/knip-ratchet.mjs --write",
+    "silence:check": "node scripts/silence-inventory.mjs",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "^10.10.0",
+    "knip": "^6.35.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.70.0"
+  }
+}

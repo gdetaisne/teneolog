@@ -1,0 +1,21 @@
+{
+  "name": "@teneolog/scenes",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "S7 — review scenes: one critical point, one annotated aerial frame, one question. Pure payload assembly; the viewer renders, the server never asks twice.",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": { ".": { "types": "./dist/src/index.d.ts", "default": "./dist/src/index.js" } },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@teneolog/domain": "*",
+    "@teneolog/road-width": "*",
+    "@teneolog/swept-path": "*"
+  },
+  "devDependencies": { "vitest": "^2.1.4" }
+}

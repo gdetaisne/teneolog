@@ -1,0 +1,179 @@
+{
+  "origine": {
+    "lat": 46.0,
+    "lon": 0.0
+  },
+  "noteCoordonnees": "Sommets en mètres locaux [est, nord] depuis `origine` — c'est ce qui rend la fixture lisible à l'œil. Conversion : lat = origine.lat + nord/111320 ; lon = origine.lon + est/(111320·cos 46°) = origine.lon + est/77327,6.",
+  "cas": "M5 — le giratoire réel",
+  "commentaire": "Un anneau `junction=roundabout` de 12 m de rayon d'axe, quatre bras de 5,0 m, l'anneau déclaré à 4,0 m. Rien ne promeut jamais des virages en giratoire : seule cette étiquette compte. M5 entre par le sud et sort par l'ouest — trois quarts de tour; M5-c entre par le sud et sort par l'est — un quart de tour. La largeur d'anneau requise est la MÊME : le balayage dit combien de temps on longe l'îlot, pas de combien le camion déporte. M5-b est le même anneau sans largeur déclarée : une inconnue, jamais un refus.",
+  "voies": [
+    {
+      "id": "w-anneau",
+      "nom": "Giratoire",
+      "largeurDeclareeM": 4.0,
+      "tags": {
+        "highway": "residential",
+        "junction": "roundabout",
+        "oneway": "yes",
+        "width": "4.0"
+      },
+      "noeuds": [
+        "RB:n0",
+        "RB:n1",
+        "RB:n2",
+        "RB:n3",
+        "RB:n4",
+        "RB:n5",
+        "RB:n6",
+        "RB:n7",
+        "RB:n8",
+        "RB:n9",
+        "RB:n10",
+        "RB:n11",
+        "RB:n12",
+        "RB:n13",
+        "RB:n14",
+        "RB:n15",
+        "RB:n16",
+        "RB:n17",
+        "RB:n18",
+        "RB:n0"
+      ],
+      "sommets": [
+        [12.0, 0.0],
+        [11.35, 3.9],
+        [9.47, 7.37],
+        [6.56, 10.05],
+        [2.95, 11.63],
+        [-0.99, 11.96],
+        [-4.82, 10.99],
+        [-8.13, 8.83],
+        [-10.55, 5.71],
+        [-11.84, 1.98],
+        [-11.84, -1.98],
+        [-10.55, -5.71],
+        [-8.13, -8.83],
+        [-4.82, -10.99],
+        [-0.99, -11.96],
+        [2.95, -11.63],
+        [6.56, -10.05],
+        [9.47, -7.37],
+        [11.35, -3.9],
+        [12.0, 0.0]
+      ]
+    },
+    {
+      "id": "w-sud",
+      "nom": "Avenue du Sud",
+      "largeurDeclareeM": 5.0,
+      "tags": {
+        "highway": "residential",
+        "width": "5.0"
+      },
+      "noeuds": [
+        "RB:n14",
+        "w-sud:n1"
+      ],
+      "sommets": [
+        [0.0, -12.0],
+        [0.0, -50.0]
+      ]
+    },
+    {
+      "id": "w-ouest",
+      "nom": "Rue de l'Ouest",
+      "largeurDeclareeM": 5.0,
+      "tags": {
+        "highway": "residential",
+        "width": "5.0"
+      },
+      "noeuds": [
+        "RB:n9",
+        "w-ouest:n1"
+      ],
+      "sommets": [
+        [-12.0, -0.0],
+        [-50.0, -0.0]
+      ]
+    },
+    {
+      "id": "w-nord",
+      "nom": "Route du Nord",
+      "largeurDeclareeM": 5.0,
+      "tags": {
+        "highway": "residential",
+        "width": "5.0"
+      },
+      "noeuds": [
+        "RB:n5",
+        "w-nord:n1"
+      ],
+      "sommets": [
+        [0.0, 12.0],
+        [0.0, 50.0]
+      ]
+    },
+    {
+      "id": "w-est",
+      "nom": "Chemin de l'Est",
+      "largeurDeclareeM": 5.0,
+      "tags": {
+        "highway": "residential",
+        "width": "5.0"
+      },
+      "noeuds": [
+        "RB:n0",
+        "w-est:n1"
+      ],
+      "sommets": [
+        [12.0, 0.0],
+        [50.0, 0.0]
+      ]
+    }
+  ],
+  "itineraire": {
+    "commentaire": "M5 — entrée sud, sens antihoraire, sortie ouest : 265° balayés.",
+    "sommets": [
+      [0.0, -50.0],
+      [0.0, -30.0],
+      [-0.99, -11.96],
+      [2.95, -11.63],
+      [6.56, -10.05],
+      [9.47, -7.37],
+      [11.35, -3.9],
+      [12.0, 0.0],
+      [11.35, 3.9],
+      [9.47, 7.37],
+      [6.56, 10.05],
+      [2.95, 11.63],
+      [-0.99, 11.96],
+      [-4.82, 10.99],
+      [-8.13, 8.83],
+      [-10.55, 5.71],
+      [-11.84, 1.98],
+      [-30.0, -0.0],
+      [-50.0, -0.0]
+    ]
+  },
+  "varianteM5b": {
+    "titre": "M5-b — le même anneau sans largeur déclarée",
+    "commentaire": "Retirer `width` de `w-anneau` et mettre `largeurDeclareeM` à null : l'anneau roulable devient une inconnue, et une inconnue n'est jamais un refus (principe 5)."
+  },
+  "varianteM5c": {
+    "titre": "M5-c — le même anneau, première sortie (sud → est) : 95° balayés",
+    "itineraire": {
+      "sommets": [
+        [0.0, -50.0],
+        [0.0, -30.0],
+        [-0.99, -11.96],
+        [2.95, -11.63],
+        [6.56, -10.05],
+        [9.47, -7.37],
+        [11.35, -3.9],
+        [12.0, 0.0],
+        [30.0, 0.0],
+        [50.0, 0.0]
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "../domain"
+    },
+    {
+      "path": "../topology"
+    },
+    {
+      "path": "../constraints"
+    },
+    {
+      "path": "../points"
+    },
+    {
+      "path": "../projection"
+    },
+    {
+      "path": "../report"
+    },
+    {
+      "path": "../routes"
+    }
+  ],
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ]
+}

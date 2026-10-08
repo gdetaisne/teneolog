@@ -1,0 +1,1328 @@
+{
+ "_source": "Run 382e9a97 du 2026-09-12 (la note de conception interne). Distillé de la section `routes` servie par /v1/explain : seuls les champs que `measureLegPair` et `approachReachM` lisent sont gardés — les polylignes complètes (418 ko) ne servent qu'à situer le BOUT de chaque approche, qui est donc le seul point conservé.",
+ "stop": {
+  "lat": 46.073482,
+  "lon": -0.965414
+ },
+ "candidates": [
+  {
+   "id": "119513478@56:in",
+   "direction": "in",
+   "distanceM": 2100.1,
+   "segments": [
+    {
+     "segmentId": "119513478",
+     "highway": "tertiary",
+     "lengthM": 1275
+    },
+    {
+     "segmentId": "755175098",
+     "highway": "tertiary",
+     "lengthM": 400
+    },
+    {
+     "segmentId": "226245133",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "226245137",
+     "highway": "tertiary",
+     "lengthM": 275
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 21.31840801411863
+    }
+   ]
+  },
+  {
+   "id": "119513478@56:out",
+   "direction": "out",
+   "distanceM": 2413.2,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "119510838",
+     "highway": "residential",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "123561778",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1299921729",
+     "highway": "residential",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "119510840",
+     "highway": "residential",
+     "lengthM": 375
+    },
+    {
+     "segmentId": "755175098",
+     "highway": "tertiary",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "119513478",
+     "highway": "tertiary",
+     "lengthM": 1258.9833505659572
+    }
+   ]
+  },
+  {
+   "id": "230180930@153:in",
+   "direction": "in",
+   "distanceM": 2899.4,
+   "segments": [
+    {
+     "segmentId": "230180930",
+     "highway": "unclassified",
+     "lengthM": 875
+    },
+    {
+     "segmentId": "230180934",
+     "highway": "residential",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "230180936",
+     "highway": "residential",
+     "lengthM": 125
+    },
+    {
+     "segmentId": "136336543",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "755189953",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "119510849",
+     "highway": "tertiary",
+     "lengthM": 575
+    },
+    {
+     "segmentId": "1302546960",
+     "highway": "tertiary",
+     "lengthM": 400
+    },
+    {
+     "segmentId": "226244822",
+     "highway": "tertiary",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "86207122",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "305822621",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "1235587004",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 20.495818042371866
+    }
+   ]
+  },
+  {
+   "id": "230180930@153:out",
+   "direction": "out",
+   "distanceM": 3021.8,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "119510837",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "86207122",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "226244822",
+     "highway": "tertiary",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "1302546960",
+     "highway": "tertiary",
+     "lengthM": 375
+    },
+    {
+     "segmentId": "119510849",
+     "highway": "tertiary",
+     "lengthM": 600
+    },
+    {
+     "segmentId": "755189953",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "136336543",
+     "highway": "tertiary",
+     "lengthM": 150
+    },
+    {
+     "segmentId": "230180936",
+     "highway": "residential",
+     "lengthM": 150
+    },
+    {
+     "segmentId": "230180934",
+     "highway": "residential",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "230180930",
+     "highway": "unclassified",
+     "lengthM": 867.4882859726849
+    }
+   ]
+  },
+  {
+   "id": "708450424@211:in",
+   "direction": "in",
+   "distanceM": 2282.5,
+   "segments": [
+    {
+     "segmentId": "708450424",
+     "highway": "tertiary",
+     "lengthM": 1475
+    },
+    {
+     "segmentId": "226244813",
+     "highway": "residential",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "708450425",
+     "highway": "residential",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1300724451",
+     "highway": "residential",
+     "lengthM": 225
+    },
+    {
+     "segmentId": "119510843",
+     "highway": "residential",
+     "lengthM": 300
+    },
+    {
+     "segmentId": "86207122",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "305822621",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "1235587004",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 30.876066218347205
+    }
+   ]
+  },
+  {
+   "id": "708450424@211:out",
+   "direction": "out",
+   "distanceM": 2197.4,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "86207120",
+     "highway": "residential",
+     "lengthM": 125
+    },
+    {
+     "segmentId": "119510843",
+     "highway": "residential",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1300724451",
+     "highway": "residential",
+     "lengthM": 225
+    },
+    {
+     "segmentId": "226244824",
+     "highway": "residential",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226247917",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "708450426",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "708450424",
+     "highway": "tertiary",
+     "lengthM": 1471.0884484882558
+    }
+   ]
+  },
+  {
+   "id": "1023958763@302:in",
+   "direction": "in",
+   "distanceM": 2751.8,
+   "segments": [
+    {
+     "segmentId": "1023958763",
+     "highway": "unclassified",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "123561771",
+     "highway": "unclassified",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "1164433915",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "305821102",
+     "highway": "tertiary",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "305821103",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "1125852300",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1425862599",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "123561755",
+     "highway": "tertiary",
+     "lengthM": 775
+    },
+    {
+     "segmentId": "123561760",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "1492371893",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "123561778",
+     "highway": "tertiary",
+     "lengthM": 550
+    },
+    {
+     "segmentId": "305822619",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "119510842",
+     "highway": "residential",
+     "lengthM": 150
+    },
+    {
+     "segmentId": "226245137",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 22.324376819081408
+    }
+   ]
+  },
+  {
+   "id": "1023958763@302:out",
+   "direction": "out",
+   "distanceM": 2614.2,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "119510838",
+     "highway": "residential",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "123561778",
+     "highway": "tertiary",
+     "lengthM": 450
+    },
+    {
+     "segmentId": "1492371893",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "123561760",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "123561755",
+     "highway": "tertiary",
+     "lengthM": 750
+    },
+    {
+     "segmentId": "1425862599",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "1125852300",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "305821103",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "305821102",
+     "highway": "tertiary",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "1164433915",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "123561771",
+     "highway": "unclassified",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "1023958763",
+     "highway": "unclassified",
+     "lengthM": 35.396787087963276
+    }
+   ]
+  },
+  {
+   "id": "364439832@356:in",
+   "direction": "in",
+   "distanceM": 2693.4,
+   "segments": [
+    {
+     "segmentId": "364439832",
+     "highway": "tertiary",
+     "lengthM": 1575
+    },
+    {
+     "segmentId": "305828622",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "1492371893",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "123561778",
+     "highway": "tertiary",
+     "lengthM": 575
+    },
+    {
+     "segmentId": "305822619",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "119510842",
+     "highway": "residential",
+     "lengthM": 150
+    },
+    {
+     "segmentId": "226245137",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 41.27742516153694
+    }
+   ]
+  },
+  {
+   "id": "364439832@356:out",
+   "direction": "out",
+   "distanceM": 2555.7,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "119510838",
+     "highway": "residential",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "123561778",
+     "highway": "tertiary",
+     "lengthM": 450
+    },
+    {
+     "segmentId": "1492371893",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "305828622",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "364439832",
+     "highway": "tertiary",
+     "lengthM": 1579.3498354304202
+    }
+   ]
+  },
+  {
+   "id": "disc:r3@295:out:alt1",
+   "direction": "out",
+   "distanceM": 909.8,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1303926416",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1303926415",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "360166542",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "1327539582",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "226251444",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226250622",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1085450591",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "123561777",
+     "highway": "tertiary",
+     "lengthM": 225
+    },
+    {
+     "segmentId": "1492371894",
+     "highway": "tertiary",
+     "lengthM": 0
+    }
+   ]
+  },
+  {
+   "id": "disc:r2@285:out",
+   "direction": "out",
+   "distanceM": 2023.2,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1303926416",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1303926415",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "360166542",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "1327539582",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "226251444",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1080841173",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226250619",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1085450592",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "1085450593",
+     "highway": "tertiary",
+     "lengthM": 350
+    },
+    {
+     "segmentId": "1085450594",
+     "highway": "tertiary",
+     "lengthM": 375
+    },
+    {
+     "segmentId": "119510841",
+     "highway": "tertiary",
+     "lengthM": 517.8754792919876
+    }
+   ]
+  },
+  {
+   "id": "disc:r3@250:out:alt1",
+   "direction": "out",
+   "distanceM": 948.9,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1303926416",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1303926415",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "360166542",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "1327539582",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "226251444",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1080841173",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "226250610",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "759051068",
+     "highway": "tertiary",
+     "lengthM": 247.3208985438214
+    }
+   ]
+  },
+  {
+   "id": "disc:r3@145:in",
+   "direction": "in",
+   "distanceM": 1642.2,
+   "segments": [
+    {
+     "segmentId": "755189954",
+     "highway": "tertiary",
+     "lengthM": 450
+    },
+    {
+     "segmentId": "136336541",
+     "highway": "unclassified",
+     "lengthM": 650
+    },
+    {
+     "segmentId": "1302546960",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "226244822",
+     "highway": "tertiary",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "86207122",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "305822621",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 39.93372639825702
+    }
+   ]
+  },
+  {
+   "id": "disc:r3@220:in:alt1",
+   "direction": "in",
+   "distanceM": 1710.5,
+   "segments": [
+    {
+     "segmentId": "708450424",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "136336533",
+     "highway": "unclassified",
+     "lengthM": 1250
+    },
+    {
+     "segmentId": "226244809",
+     "highway": "residential",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "86207122",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "305822621",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 34.39237812929605
+    }
+   ]
+  },
+  {
+   "id": "disc:r3@085:in:alt1",
+   "direction": "in",
+   "distanceM": 2151.3,
+   "segments": [
+    {
+     "segmentId": "230180931",
+     "highway": "tertiary",
+     "lengthM": 550
+    },
+    {
+     "segmentId": "121183549",
+     "highway": "unclassified",
+     "lengthM": 1100
+    },
+    {
+     "segmentId": "226244826",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "226245143",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226245133",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226245137",
+     "highway": "tertiary",
+     "lengthM": 275
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 21.508971747231044
+    }
+   ]
+  },
+  {
+   "id": "disc:r2@285:in",
+   "direction": "in",
+   "distanceM": 2154.1,
+   "segments": [
+    {
+     "segmentId": "119510841",
+     "highway": "tertiary",
+     "lengthM": 525
+    },
+    {
+     "segmentId": "1085450594",
+     "highway": "tertiary",
+     "lengthM": 375
+    },
+    {
+     "segmentId": "1085450593",
+     "highway": "tertiary",
+     "lengthM": 350
+    },
+    {
+     "segmentId": "1085450592",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "226250612",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1080841173",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226251442",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1327539582",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "360166542",
+     "highway": "tertiary",
+     "lengthM": 175
+    },
+    {
+     "segmentId": "1303926415",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "1303926416",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "119510837",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "305822621",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "1235587004",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 23.667713594052657
+    }
+   ]
+  },
+  {
+   "id": "disc:r3@235:out",
+   "direction": "out",
+   "distanceM": 777.2,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1240950297",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "86207120",
+     "highway": "residential",
+     "lengthM": 125
+    },
+    {
+     "segmentId": "119510843",
+     "highway": "residential",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "1300724451",
+     "highway": "residential",
+     "lengthM": 225
+    },
+    {
+     "segmentId": "226244824",
+     "highway": "residential",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226247917",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "708450426",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "708450424",
+     "highway": "tertiary",
+     "lengthM": 51.063933338986885
+    }
+   ]
+  },
+  {
+   "id": "disc:r3@250:in",
+   "direction": "in",
+   "distanceM": 886.6,
+   "segments": [
+    {
+     "segmentId": "759051068",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "226247917",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "226244810",
+     "highway": "residential",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "1300724451",
+     "highway": "residential",
+     "lengthM": 225
+    },
+    {
+     "segmentId": "119510843",
+     "highway": "residential",
+     "lengthM": 300
+    },
+    {
+     "segmentId": "86207122",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "305822621",
+     "highway": "tertiary",
+     "lengthM": 50
+    },
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 35.23122397006034
+    }
+   ]
+  },
+  {
+   "id": "disc:r2@150:out:alt1",
+   "direction": "out",
+   "distanceM": 2108.7,
+   "segments": [
+    {
+     "segmentId": "86207123",
+     "highway": "tertiary",
+     "lengthM": 0
+    },
+    {
+     "segmentId": "305822620",
+     "highway": "tertiary",
+     "lengthM": 75
+    },
+    {
+     "segmentId": "119510837",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "86207122",
+     "highway": "tertiary",
+     "lengthM": 25
+    },
+    {
+     "segmentId": "226244822",
+     "highway": "tertiary",
+     "lengthM": 200
+    },
+    {
+     "segmentId": "1302546960",
+     "highway": "tertiary",
+     "lengthM": 100
+    },
+    {
+     "segmentId": "136336541",
+     "highway": "unclassified",
+     "lengthM": 625
+    },
+    {
+     "segmentId": "755189954",
+     "highway": "tertiary",
+     "lengthM": 650
+    },
+    {
+     "segmentId": "136336543",
+     "highway": "tertiary",
+     "lengthM": 130.26203854563482
+    }
+   ]
+  }
+ ],
+ "approaches": [
+  {
+   "key": "r1@000",
+   "direction": "in",
+   "routedDistanceM": 2693.4,
+   "farEnd": {
+    "lat": 46.091329,
+    "lon": -0.967173
+   }
+  },
+  {
+   "key": "r1@090",
+   "direction": "in",
+   "routedDistanceM": 2100.1,
+   "farEnd": {
+    "lat": 46.083158,
+    "lon": -0.944441
+   }
+  },
+  {
+   "key": "r1@180",
+   "direction": "in",
+   "routedDistanceM": 2282.5,
+   "farEnd": {
+    "lat": 46.058166,
+    "lon": -0.978846
+   }
+  },
+  {
+   "key": "r2@105",
+   "direction": "in",
+   "routedDistanceM": 2031.3,
+   "farEnd": {
+    "lat": 46.066092,
+    "lon": -0.942974
+   }
+  },
+  {
+   "key": "r2@285",
+   "direction": "in",
+   "routedDistanceM": 2154.1,
+   "farEnd": {
+    "lat": 46.074317,
+    "lon": -0.990667
+   }
+  },
+  {
+   "key": "r3@085:alt1",
+   "direction": "in",
+   "routedDistanceM": 2151.3,
+   "farEnd": {
+    "lat": 46.075286,
+    "lon": -0.940732
+   }
+  },
+  {
+   "key": "r3@145",
+   "direction": "in",
+   "routedDistanceM": 1642.2,
+   "farEnd": {
+    "lat": 46.065197,
+    "lon": -0.954644
+   }
+  },
+  {
+   "key": "r3@220:alt1",
+   "direction": "in",
+   "routedDistanceM": 1710.5,
+   "farEnd": {
+    "lat": 46.064999,
+    "lon": -0.97354
+   }
+  },
+  {
+   "key": "r3@250",
+   "direction": "in",
+   "routedDistanceM": 886.6,
+   "farEnd": {
+    "lat": 46.071307,
+    "lon": -0.972617
+   }
+  },
+  {
+   "key": "r1@000:out",
+   "direction": "out",
+   "routedDistanceM": 2555.7,
+   "farEnd": {
+    "lat": 46.091329,
+    "lon": -0.967173
+   }
+  },
+  {
+   "key": "r1@090:out",
+   "direction": "out",
+   "routedDistanceM": 2413.2,
+   "farEnd": {
+    "lat": 46.083158,
+    "lon": -0.944441
+   }
+  },
+  {
+   "key": "r1@180:out",
+   "direction": "out",
+   "routedDistanceM": 2197.4,
+   "farEnd": {
+    "lat": 46.058166,
+    "lon": -0.978846
+   }
+  },
+  {
+   "key": "r2@105:out",
+   "direction": "out",
+   "routedDistanceM": 2153.7,
+   "farEnd": {
+    "lat": 46.066092,
+    "lon": -0.942974
+   }
+  },
+  {
+   "key": "r2@150:out:alt1",
+   "direction": "out",
+   "routedDistanceM": 2108.7,
+   "farEnd": {
+    "lat": 46.065173,
+    "lon": -0.950292
+   }
+  },
+  {
+   "key": "r2@285:out",
+   "direction": "out",
+   "routedDistanceM": 2023.2,
+   "farEnd": {
+    "lat": 46.074317,
+    "lon": -0.990667
+   }
+  },
+  {
+   "key": "r3@235:out",
+   "direction": "out",
+   "routedDistanceM": 777.2,
+   "farEnd": {
+    "lat": 46.069447,
+    "lon": -0.972176
+   }
+  },
+  {
+   "key": "r3@250:out:alt1",
+   "direction": "out",
+   "routedDistanceM": 948.9,
+   "farEnd": {
+    "lat": 46.071307,
+    "lon": -0.972617
+   }
+  },
+  {
+   "key": "r3@295:out:alt1",
+   "direction": "out",
+   "routedDistanceM": 909.8,
+   "farEnd": {
+    "lat": 46.07661,
+    "lon": -0.972776
+   }
+  }
+ ]
+}

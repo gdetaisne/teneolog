@@ -1,0 +1,233 @@
+{
+  "origine": {
+    "lat": 46.0,
+    "lon": 0.0
+  },
+  "noteCoordonnees": "Sommets en mètres locaux [est, nord] depuis `origine` — c'est ce qui rend la fixture lisible à l'œil. Conversion : lat = origine.lat + nord/111320 ; lon = origine.lon + est/(111320·cos 46°) = origine.lon + est/77327,6.",
+  "cas": "M1 — l'angle au nœud (virage de carrefour)",
+  "commentaire": "Un nœud N (0,0) où trois voies se rejoignent : la Rue d'Arrivée (5,2 m) vient du sud, la Rue de Sortie part vers la droite, une Rue Latérale fait le troisième bras (degré 3). La carte dessine un coin de rayon nul ; le camion, lui, tourne à son rayon de braquage. Trois angles, pour le tableau angle × largeur : 45°, 90°, 135°. La voie ne porte AUCUN sommet intermédiaire dans le coin — un ajustement de cercle n'a rien à mordre, et c'est le signe.",
+  "variantes": [
+    {
+      "cas": "M1-a",
+      "titre": "virage de carrefour 45° sur une sortie de 5.0 m",
+      "voies": [
+        {
+          "id": "w-entree",
+          "nom": "Rue d'Arrivée",
+          "largeurDeclareeM": 5.2,
+          "tags": {
+            "highway": "residential",
+            "width": "5.2"
+          },
+          "noeuds": [
+            "w-entree:n0",
+            "w-entree:n1",
+            "N"
+          ],
+          "sommets": [
+            [0, -80],
+            [0, -40],
+            [0, 0]
+          ]
+        },
+        {
+          "id": "w-sortie",
+          "nom": "Rue de Sortie",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "N",
+            "w-sortie:n1",
+            "w-sortie:n2"
+          ],
+          "sommets": [
+            [0, 0],
+            [28.28, 28.28],
+            [56.57, 56.57]
+          ]
+        },
+        {
+          "id": "w-laterale",
+          "nom": "Rue Latérale",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N",
+            "w-laterale:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [-28.28, -28.28]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Le tracé du routeur : il arrondit le coin sur un chanfrein de 6 m, donc aucun sommet ne porte à lui seul la déflexion.",
+        "sommets": [
+          [0, -80],
+          [0, -40],
+          [0, -20],
+          [0, -6.0],
+          [1.27, -1.8],
+          [4.24, 4.24],
+          [28.28, 28.28],
+          [56.57, 56.57]
+        ]
+      }
+    },
+    {
+      "cas": "M1-b",
+      "titre": "virage de carrefour 90° sur une sortie de 4.0 m",
+      "voies": [
+        {
+          "id": "w-entree",
+          "nom": "Rue d'Arrivée",
+          "largeurDeclareeM": 5.2,
+          "tags": {
+            "highway": "residential",
+            "width": "5.2"
+          },
+          "noeuds": [
+            "w-entree:n0",
+            "w-entree:n1",
+            "N"
+          ],
+          "sommets": [
+            [0, -80],
+            [0, -40],
+            [0, 0]
+          ]
+        },
+        {
+          "id": "w-sortie",
+          "nom": "Rue de Sortie",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N",
+            "w-sortie:n1",
+            "w-sortie:n2"
+          ],
+          "sommets": [
+            [0, 0],
+            [40.0, 0.0],
+            [80.0, 0.0]
+          ]
+        },
+        {
+          "id": "w-laterale",
+          "nom": "Rue Latérale",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N",
+            "w-laterale:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [-40.0, -0.0]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Le tracé du routeur : il arrondit le coin sur un chanfrein de 6 m, donc aucun sommet ne porte à lui seul la déflexion.",
+        "sommets": [
+          [0, -80],
+          [0, -40],
+          [0, -20],
+          [0, -6.0],
+          [1.8, -1.8],
+          [6.0, 0.0],
+          [40.0, 0.0],
+          [80.0, 0.0]
+        ]
+      }
+    },
+    {
+      "cas": "M1-c",
+      "titre": "virage de carrefour 135° sur une sortie de 4.0 m",
+      "voies": [
+        {
+          "id": "w-entree",
+          "nom": "Rue d'Arrivée",
+          "largeurDeclareeM": 5.2,
+          "tags": {
+            "highway": "residential",
+            "width": "5.2"
+          },
+          "noeuds": [
+            "w-entree:n0",
+            "w-entree:n1",
+            "N"
+          ],
+          "sommets": [
+            [0, -80],
+            [0, -40],
+            [0, 0]
+          ]
+        },
+        {
+          "id": "w-sortie",
+          "nom": "Rue de Sortie",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N",
+            "w-sortie:n1",
+            "w-sortie:n2"
+          ],
+          "sommets": [
+            [0, 0],
+            [28.28, -28.28],
+            [56.57, -56.57]
+          ]
+        },
+        {
+          "id": "w-laterale",
+          "nom": "Rue Latérale",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N",
+            "w-laterale:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [-28.28, 28.28]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Le tracé du routeur : il arrondit le coin sur un chanfrein de 6 m, donc aucun sommet ne porte à lui seul la déflexion.",
+        "sommets": [
+          [0, -80],
+          [0, -40],
+          [0, -20],
+          [0, -6.0],
+          [1.27, -1.8],
+          [4.24, -4.24],
+          [28.28, -28.28],
+          [56.57, -56.57]
+        ]
+      }
+    }
+  ]
+}

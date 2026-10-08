@@ -1,0 +1,40 @@
+{
+  "_lire": [
+    "Photo des exports morts de `packages/*/src` — principe 25.",
+    "Ce fichier ne s'édite pas à la main : `npm run knip:baseline` le régénère.",
+    "Chaque nom listé est de la dette réelle, à retirer quand on touche au fichier.",
+    "Ce que knip ne peut pas deviner se déclare dans knip.jsonc, jamais ici."
+  ],
+  "prise_le": "2026-09-12",
+  "perimetre": "packages/*/src (le moteur) — bloquant. Le reste du dépôt est en rapport seul.",
+  "total": {
+    "fichiers": 4,
+    "constats": 8
+  },
+  "fichiers": {
+    "packages/road-width/src/d10v2-rollable-width.ts": {
+      "types": [
+        "D10v2RollableSource"
+      ]
+    },
+    "packages/road-width/src/mask-corridor.ts": {
+      "exports": [
+        "MASK_CORRIDOR_LATERAL_HALF_M",
+        "MASK_CORRIDOR_MARGIN_M",
+        "intersectPixelBounds"
+      ]
+    },
+    "packages/swept-path/src/geometry.ts": {
+      "exports": [
+        "cubicBezier",
+        "lerp",
+        "polylineLength"
+      ]
+    },
+    "packages/swept-path/src/simulation.ts": {
+      "exports": [
+        "polygonArea"
+      ]
+    }
+  }
+}

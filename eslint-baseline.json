@@ -1,0 +1,322 @@
+{
+  "_lire": [
+    "Photo de la dette de taille et de complexité — principe 26.",
+    "Ce fichier ne s'édite pas à la main : `npm run lint:baseline` le régénère.",
+    "Chaque entrée gèle un fichier : il ne peut plus grossir, seulement maigrir.",
+    "`nombre` = combien de fois la règle est enfreinte ; `pire` = la plus grosse valeur mesurée",
+    "(lignes hors vides et commentaires pour max-lines et max-lines-per-function)."
+  ],
+  "prise_le": "2026-09-12",
+  "limites": {
+    "max-lines": 600,
+    "max-lines-per-function": 80,
+    "complexity": 12,
+    "max-depth": 4
+  },
+  "total": {
+    "fichiers": 40,
+    "violations": 74
+  },
+  "fichiers": {
+    "packages/adapters/src/bdtopo-buildings.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 14
+      }
+    },
+    "packages/adapters/src/overpass-mapping.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 13
+      }
+    },
+    "packages/adapters/src/overpass.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 18
+      }
+    },
+    "packages/constraints/src/legal-bands.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 17
+      }
+    },
+    "packages/constraints/src/stop-constraints.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 13
+      }
+    },
+    "packages/pipeline/src/analyse.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 16
+      }
+    },
+    "packages/pipeline/src/full.ts": {
+      "complexity": {
+        "nombre": 2,
+        "pire": 21
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 186
+      }
+    },
+    "packages/pipeline/src/obvious-stop.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 14
+      }
+    },
+    "packages/pipeline/src/street-doubt.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 24
+      }
+    },
+    "packages/projection/src/evaluators.ts": {
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 82
+      }
+    },
+    "packages/projection/src/pairs.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 14
+      }
+    },
+    "packages/projection/src/plans.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 13
+      }
+    },
+    "packages/projection/src/project.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 25
+      }
+    },
+    "packages/road-width/src/bdtopo-coreg.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 16
+      }
+    },
+    "packages/road-width/src/color-utils.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 29
+      }
+    },
+    "packages/road-width/src/d10v2-banded-width.ts": {
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 90
+      }
+    },
+    "packages/road-width/src/d10v2-rollable-width.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 13
+      }
+    },
+    "packages/road-width/src/d10v2-simple.ts": {
+      "complexity": {
+        "nombre": 2,
+        "pire": 22
+      },
+      "max-lines-per-function": {
+        "nombre": 2,
+        "pire": 146
+      }
+    },
+    "packages/road-width/src/exclusion-gap.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 14
+      },
+      "max-depth": {
+        "nombre": 1,
+        "pire": 5
+      }
+    },
+    "packages/road-width/src/finalize-profile.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 13
+      }
+    },
+    "packages/road-width/src/geometry.ts": {
+      "complexity": {
+        "nombre": 3,
+        "pire": 17
+      },
+      "max-lines": {
+        "nombre": 1,
+        "pire": 646
+      },
+      "max-lines-per-function": {
+        "nombre": 2,
+        "pire": 180
+      }
+    },
+    "packages/road-width/src/kerb-candidate-score.ts": {
+      "complexity": {
+        "nombre": 2,
+        "pire": 18
+      }
+    },
+    "packages/road-width/src/marking-edge.ts": {
+      "complexity": {
+        "nombre": 3,
+        "pire": 20
+      }
+    },
+    "packages/road-width/src/masks.ts": {
+      "complexity": {
+        "nombre": 4,
+        "pire": 34
+      },
+      "max-depth": {
+        "nombre": 2,
+        "pire": 5
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 115
+      }
+    },
+    "packages/road-width/src/measure-stitched.ts": {
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 87
+      }
+    },
+    "packages/road-width/src/parking-classify.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 31
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 87
+      }
+    },
+    "packages/road-width/src/plateau-safety.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 14
+      }
+    },
+    "packages/road-width/src/polygon-mask.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 17
+      },
+      "max-depth": {
+        "nombre": 2,
+        "pire": 5
+      }
+    },
+    "packages/road-width/src/profile.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 99
+      },
+      "max-lines": {
+        "nombre": 1,
+        "pire": 763
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 613
+      }
+    },
+    "packages/road-width/src/spatial-masks-parallel.ts": {
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 122
+      }
+    },
+    "packages/road-width/src/stitched-pipeline.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 25
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 186
+      }
+    },
+    "packages/road-width/src/tile-pipeline.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 15
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 118
+      }
+    },
+    "packages/road-width/src/verdict.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 29
+      }
+    },
+    "packages/road-width/src/yolo-clamp.ts": {
+      "complexity": {
+        "nombre": 2,
+        "pire": 46
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 166
+      }
+    },
+    "packages/routes/src/candidates.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 15
+      }
+    },
+    "packages/routes/src/gate-by-width.ts": {
+      "complexity": {
+        "nombre": 2,
+        "pire": 17
+      },
+      "max-lines-per-function": {
+        "nombre": 1,
+        "pire": 92
+      }
+    },
+    "packages/swept-path/src/footprint-raster.ts": {
+      "complexity": {
+        "nombre": 2,
+        "pire": 14
+      }
+    },
+    "packages/topology/src/attribution.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 21
+      }
+    },
+    "packages/topology/src/handoff.ts": {
+      "complexity": {
+        "nombre": 3,
+        "pire": 16
+      }
+    },
+    "packages/topology/src/topology-assessment.ts": {
+      "complexity": {
+        "nombre": 1,
+        "pire": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": ".", "outDir": "dist", "composite": true },
+  "references": [{ "path": "../domain" }, { "path": "../topology" }, { "path": "../constraints" }],
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

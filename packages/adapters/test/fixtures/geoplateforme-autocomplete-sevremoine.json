@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.946111,
+          47.125714
+        ]
+      },
+      "properties": {
+        "label": "7 Allée des Essais 49450 Sèvremoine",
+        "score": 0.8706563636363636,
+        "housenumber": "7",
+        "id": "49301_9999_00007",
+        "banId": "00000000-0000-4000-8000-000000000000",
+        "name": "7 Allée des Essais",
+        "postcode": "49450",
+        "citycode": "49301",
+        "oldcitycode": "49301",
+        "x": 398000.0,
+        "y": 6677000.0,
+        "city": "Sèvremoine",
+        "oldcity": "St Macaire-en-Voisine MA",
+        "context": "49, Maine-et-Loire, Pays de la Loire",
+        "type": "housenumber",
+        "importance": 0.57722,
+        "depcode": "49",
+        "street": "Allée des Essais",
+        "_type": "address"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.33152,
+          47.982942
+        ]
+      },
+      "properties": {
+        "label": "7 Allée des Essais 72560 Changé",
+        "score": 0.8669927272727271,
+        "housenumber": "7",
+        "id": "72058_9999_00007",
+        "banId": "00000000-0000-4000-8000-000000000000",
+        "name": "7 Allée des Essais",
+        "postcode": "72560",
+        "citycode": "72058",
+        "x": 498000.0,
+        "y": 6768000.0,
+        "city": "Changé",
+        "context": "72, Sarthe, Pays de la Loire",
+        "type": "housenumber",
+        "importance": 0.53692,
+        "depcode": "72",
+        "street": "Allée des Essais",
+        "_type": "address"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.44954,
+          45.465248
+        ]
+      },
+      "properties": {
+        "label": "Allée des Essais-Bis 42000 Saint-Étienne",
+        "score": 0.6034318181818181,
+        "id": "42218_9998",
+        "name": "Allée des Essais-Bis",
+        "postcode": "42000",
+        "citycode": "42218",
+        "x": 810000.0,
+        "y": 6486000.0,
+        "city": "Saint-Étienne",
+        "context": "42, Loire, Auvergne-Rhône-Alpes",
+        "type": "street",
+        "importance": 0.63775,
+        "depcode": "42",
+        "street": "Allée des Essais-Bis",
+        "_type": "address"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.734052,
+          46.078441
+        ]
+      },
+      "properties": {
+        "label": "Allée des Essais-Bis 69220 Charentay",
+        "score": 0.5834336363636362,
+        "id": "69045_9998",
+        "banId": "00000000-0000-4000-8000-000000000000",
+        "name": "Allée des Essais-Bis",
+        "postcode": "69220",
+        "citycode": "69045",
+        "x": 831000.0,
+        "y": 6555000.0,
+        "city": "Charentay",
+        "context": "69, Rhône, Auvergne-Rhône-Alpes",
+        "type": "street",
+        "importance": 0.41777,
+        "depcode": "69",
+        "street": "Allée des Essais-Bis",
+        "_type": "address"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.084279,
+          50.775793
+        ]
+      },
+      "properties": {
+        "label": "4 Allée Fictive 59117 Wervicq-Sud",
+        "score": 0.4997579310344827,
+        "housenumber": "7",
+        "id": "59656_9999_00004",
+        "banId": "00000000-0000-4000-8000-000000000000",
+        "name": "4 Allée Fictive",
+        "postcode": "59117",
+        "citycode": "59656",
+        "x": 703000.0,
+        "y": 7075000.0,
+        "city": "Wervicq-Sud",
+        "context": "59, Nord, Hauts-de-France",
+        "type": "housenumber",
+        "importance": 0.53182,
+        "depcode": "59",
+        "street": "Allée Fictive",
+        "_type": "address"
+      }
+    }
+  ],
+  "query": "7 allée des ess"
+}

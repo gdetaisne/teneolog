@@ -1,0 +1,41 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "composite": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ]
+  },
+  "references": [
+    {
+      "path": "../domain"
+    },
+    {
+      "path": "../topology"
+    },
+    {
+      "path": "../pipeline"
+    },
+    {
+      "path": "../road-width"
+    },
+    {
+      "path": "../constraints"
+    },
+    {
+      "path": "../routes"
+    },
+    {
+      "path": "../scenes"
+    }
+  ],
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "test/**/*.json",
+    "scripts/**/*.ts"
+  ]
+}

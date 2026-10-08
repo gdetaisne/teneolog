@@ -1,0 +1,23 @@
+{
+  "name": "@teneolog/domain",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pure domain vocabulary: facts, topology, constraints, verdicts, policy. No I/O, no dependencies.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}

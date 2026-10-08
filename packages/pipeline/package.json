@@ -1,0 +1,32 @@
+{
+  "name": "@teneolog/pipeline",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Application layer: sequences S0\u2192S2 over injected ports. Owns the widening ladder and the assembly of RoadFacts; owns no measurement logic.",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@teneolog/constraints": "*",
+    "@teneolog/domain": "*",
+    "@teneolog/topology": "*",
+    "@teneolog/points": "*",
+    "@teneolog/projection": "*",
+    "@teneolog/report": "*",
+    "@teneolog/routes": "*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}

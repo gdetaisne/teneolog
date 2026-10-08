@@ -1,0 +1,29 @@
+{
+  "name": "@teneolog/projection",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "S5 — the pure projection: (road facts, one truck, policy) → verdicts. No I/O; asking about another truck re-runs this and nothing upstream.",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@teneolog/domain": "*",
+    "@teneolog/points": "*",
+    "@teneolog/swept-path": "*",
+    "@teneolog/topology": "*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4"
+  }
+}

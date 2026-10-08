@@ -1,0 +1,329 @@
+{
+  "origine": {
+    "lat": 46.0,
+    "lon": 0.0
+  },
+  "noteCoordonnees": "Sommets en mètres locaux [est, nord] depuis `origine` — c'est ce qui rend la fixture lisible à l'œil. Conversion : lat = origine.lat + nord/111320 ; lon = origine.lon + est/(111320·cos 46°) = origine.lon + est/77327,6.",
+  "cas": "M4 — deux virages rapprochés",
+  "commentaire": "Trois écarts, trois lectures. Sous une longueur de camion (6 m pour le fourgon, 9 m pour le 19 t, 16,5 m pour le semi) le camion ne se redresse jamais entre les deux : c'est UNE manœuvre, et les déports s'ajoutent en valeur absolue. Au-delà, deux manœuvres, chaînées tant que l'écart reste sous 40 m. M4-b est un S : sa déflexion NETTE est nulle, et une règle qui fusionne par l'angle net l'efface — aujourd'hui elle l'efface.",
+  "variantes": [
+    {
+      "cas": "M4-a",
+      "titre": "45° + 45° même sens, apex à 8 m",
+      "voies": [
+        {
+          "id": "w-0",
+          "nom": "Rue d'Arrivée",
+          "largeurDeclareeM": 5.2,
+          "tags": {
+            "highway": "residential",
+            "width": "5.2"
+          },
+          "noeuds": [
+            "w-0:n0",
+            "w-0:n1",
+            "N1"
+          ],
+          "sommets": [
+            [0, -60],
+            [0, -30],
+            [0, 0]
+          ]
+        },
+        {
+          "id": "w-1",
+          "nom": "Rue du Milieu",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "N1",
+            "N2"
+          ],
+          "sommets": [
+            [0, 0],
+            [5.66, 5.66]
+          ]
+        },
+        {
+          "id": "w-2",
+          "nom": "Rue de Sortie",
+          "largeurDeclareeM": 4.5,
+          "tags": {
+            "highway": "residential",
+            "width": "4.5"
+          },
+          "noeuds": [
+            "N2",
+            "w-2:n1",
+            "w-2:n2"
+          ],
+          "sommets": [
+            [5.66, 5.66],
+            [35.66, 5.66],
+            [65.66, 5.66]
+          ]
+        },
+        {
+          "id": "w-lat1",
+          "nom": "Bras latéral 1",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N1",
+            "w-lat1:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [-35, 0]
+          ]
+        },
+        {
+          "id": "w-lat2",
+          "nom": "Bras latéral 2",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N2",
+            "w-lat2:n1"
+          ],
+          "sommets": [
+            [5.66, 5.66],
+            [-29.34, 5.66]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Deux coins nets, 8 m entre eux.",
+        "sommets": [
+          [0, -60],
+          [0, -30],
+          [0, 0],
+          [5.66, 5.66],
+          [35.66, 5.66],
+          [65.66, 5.66]
+        ]
+      }
+    },
+    {
+      "cas": "M4-b",
+      "titre": "60° à droite puis 60° à gauche (S), apex à 7 m",
+      "voies": [
+        {
+          "id": "w-0",
+          "nom": "Rue d'Arrivée",
+          "largeurDeclareeM": 5.2,
+          "tags": {
+            "highway": "residential",
+            "width": "5.2"
+          },
+          "noeuds": [
+            "w-0:n0",
+            "w-0:n1",
+            "N1"
+          ],
+          "sommets": [
+            [0, -60],
+            [0, -30],
+            [0, 0]
+          ]
+        },
+        {
+          "id": "w-1",
+          "nom": "Rue du Milieu",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "N1",
+            "N2"
+          ],
+          "sommets": [
+            [0, 0],
+            [6.06, 3.5]
+          ]
+        },
+        {
+          "id": "w-2",
+          "nom": "Rue de Sortie",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "N2",
+            "w-2:n1",
+            "w-2:n2"
+          ],
+          "sommets": [
+            [6.06, 3.5],
+            [6.06, 33.5],
+            [6.06, 63.5]
+          ]
+        },
+        {
+          "id": "w-lat1",
+          "nom": "Bras latéral 1",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N1",
+            "w-lat1:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [-35, 0]
+          ]
+        },
+        {
+          "id": "w-lat2",
+          "nom": "Bras latéral 2",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N2",
+            "w-lat2:n1"
+          ],
+          "sommets": [
+            [6.06, 3.5],
+            [-28.94, 3.5]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Le S : déflexion nette nulle, et il faut la place des DEUX côtés à la fois.",
+        "sommets": [
+          [0, -60],
+          [0, -30],
+          [0, 0],
+          [6.06, 3.5],
+          [6.06, 33.5],
+          [6.06, 63.5]
+        ]
+      }
+    },
+    {
+      "cas": "M4-c",
+      "titre": "70° + 70° même sens, apex à 30 m",
+      "voies": [
+        {
+          "id": "w-0",
+          "nom": "Rue d'Arrivée",
+          "largeurDeclareeM": 5.2,
+          "tags": {
+            "highway": "residential",
+            "width": "5.2"
+          },
+          "noeuds": [
+            "w-0:n0",
+            "w-0:n1",
+            "N1"
+          ],
+          "sommets": [
+            [0, -60],
+            [0, -30],
+            [0, 0]
+          ]
+        },
+        {
+          "id": "w-1",
+          "nom": "Rue du Milieu",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "N1",
+            "N2"
+          ],
+          "sommets": [
+            [0, 0],
+            [28.19, 10.26]
+          ]
+        },
+        {
+          "id": "w-2",
+          "nom": "Rue de Sortie",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "N2",
+            "w-2:n1",
+            "w-2:n2"
+          ],
+          "sommets": [
+            [28.19, 10.26],
+            [47.47, -12.72],
+            [66.76, -35.7]
+          ]
+        },
+        {
+          "id": "w-lat1",
+          "nom": "Bras latéral 1",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N1",
+            "w-lat1:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [-35, 0]
+          ]
+        },
+        {
+          "id": "w-lat2",
+          "nom": "Bras latéral 2",
+          "largeurDeclareeM": 4.0,
+          "tags": {
+            "highway": "residential",
+            "width": "4.0"
+          },
+          "noeuds": [
+            "N2",
+            "w-lat2:n1"
+          ],
+          "sommets": [
+            [28.19, 10.26],
+            [-6.81, 10.26]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Deux manœuvres distinctes, chaînées (30 m < 40 m).",
+        "sommets": [
+          [0, -60],
+          [0, -30],
+          [0, 0],
+          [28.19, 10.26],
+          [47.47, -12.72],
+          [66.76, -35.7]
+        ]
+      }
+    }
+  ]
+}

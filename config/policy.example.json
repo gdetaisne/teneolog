@@ -1,0 +1,95 @@
+{
+  "_lire": [
+    "VALEURS D'EXEMPLE. Les seuils calibrés restent privés.",
+    "Ce fichier montre la FORME de la policy : un seul objet versionné porte tous les paramètres métier,",
+    "le code du moteur n'a aucun littéral métier en dur, et chaque run enregistre la version qu'il a lue.",
+    "Les nombres ci-dessous sont plausibles mais volontairement différents des valeurs de production.",
+    "Les drapeaux à false sont des mécanismes « en silence » : chacun est nommé dans docs/METIER.md §8",
+    "(vérifié en CI par scripts/silence-inventory.mjs)."
+  ],
+  "version": "policy-example-1",
+  "pipeline": {
+    "fetchLadderM": [100, 200, 400],
+    "selection": {
+      "maxSnapM": 25,
+      "ambiguityWindowM": 10,
+      "minWidthAdvantageM": 0.6,
+      "tipInteriorMarginM": 6,
+      "continuationDeviationDeg": 35,
+      "confidence": { "unambiguous": 0.85, "resolvedByRank": 0.7 }
+    },
+    "assessment": {
+      "turnaroundSearchRadiusM": 100,
+      "fallbackStop": { "plainWalkMaxM": 40, "portageWalkMaxM": 120, "stopOffsetM": 12 }
+    },
+    "roadAttributes": {
+      "sampleStepM": 8,
+      "lateralToleranceM": 6,
+      "bearingToleranceDeg": 20,
+      "minCoverage": 0.65
+    },
+    "geocoding": { "minBanScore": 0.65 }
+  },
+  "gates": {
+    "searchRadiusM": 2500,
+    "gateCount": 6,
+    "minDistanceM": 400,
+    "minReachM": 2100
+  },
+  "candidates": {
+    "alternativesPerGate": 1,
+    "corridorMarginM": 25,
+    "sampleStepM": 20,
+    "snapM": 20,
+    "approachWindowM": 120,
+    "laneWidthM": 3.2,
+    "minCorridorCoverage": 0.75
+  },
+  "routes": {
+    "dedup": { "enabled": false, "approach": false }
+  },
+  "phase2": {
+    "stopBetweenBatches": false
+  },
+  "points": {
+    "turns": { "windowM": 35, "minDeflectionDeg": 40, "mergeWithinM": 20, "geometryConfidence": 0.65 },
+    "roundabouts": { "ringSnapM": 10, "ringMergeM": 35 },
+    "narrowMaxFreeM": 4.5
+  },
+  "projection": {
+    "lateralClearanceM": 0.6,
+    "turnSweptClearanceM": 0.9,
+    "roundaboutSweptClearanceM": 1.2,
+    "turnaroundClearanceM": 1.5,
+    "comfortMarginM": 0.3,
+    "comfortMarginByFamilyM": { "semi": 0.6 },
+    "publishableConfidence": 0.6,
+    "hgvThresholdT": 3.5,
+    "passingLaneWidthM": 3.0,
+    "plans": { "straightToleranceDeg": 50, "headingSpanM": 25 },
+    "conclusion": { "mode": "plans" }
+  },
+  "vehicles": [
+    {
+      "id": "vul-fourgon",
+      "label": "Fourgon 3,5 t (exemple)",
+      "family": "vul",
+      "envelope": { "lengthM": 6.5, "widthM": 2.1, "heightM": 2.7, "gvwT": 3.5, "turnRadiusM": 7.0, "wheelbaseM": 4.0, "frontOverhangM": 0.9, "rearOverhangM": 1.6 },
+      "equipment": { "tailLift": false, "crane": false, "refrigerated": false }
+    },
+    {
+      "id": "pl-19t",
+      "label": "Porteur 19 t (exemple)",
+      "family": "rigid",
+      "envelope": { "lengthM": 10.5, "widthM": 2.55, "heightM": 3.9, "gvwT": 19, "turnRadiusM": 10.5, "wheelbaseM": 5.6, "frontOverhangM": 1.4, "rearOverhangM": 3.5 },
+      "equipment": { "tailLift": true, "crane": false, "refrigerated": false }
+    },
+    {
+      "id": "semi-44t",
+      "label": "Semi-remorque 44 t (exemple)",
+      "family": "semi",
+      "envelope": { "lengthM": 16.5, "widthM": 2.55, "heightM": 4.0, "gvwT": 44, "turnRadiusM": 12.5, "wheelbaseM": 3.8, "kingPinToRearAxleM": 7.7, "frontOverhangM": 1.4, "rearOverhangM": 3.6 },
+      "equipment": { "tailLift": false, "crane": false, "refrigerated": false }
+    }
+  ]
+}

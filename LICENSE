@@ -1,0 +1,34 @@
+Copyright (c) 2026 Guillaume Stehelin de Taisne. Tous droits réservés. All rights reserved.
+
+Ce dépôt est une vitrine. Vous pouvez le lire, le cloner et exécuter ses tests pour évaluer
+le travail. Aucune autre utilisation n'est autorisée sans accord écrit préalable : pas de
+copie, de modification, de redistribution, d'intégration dans un autre logiciel ni d'usage
+commercial, en tout ou partie.
+
+This repository is a showcase. You may read it, clone it and run its tests in order to evaluate
+the work. No other use is granted without prior written permission: no copying, modification,
+redistribution, incorporation into other software or commercial use, in whole or in part.
+
+Contact : https://teneo-services.com
+
+----------------------------------------------------------------------------------------------
+Données tierces / Third-party data
+----------------------------------------------------------------------------------------------
+
+Les fixtures de test contiennent des extraits de données ouvertes, anonymisés (noms de voies
+remplacés, numéros changés, longitudes décalées d'une constante). Ces extraits restent soumis
+à leur licence d'origine :
+
+- OpenStreetMap : © les contributeurs d'OpenStreetMap, données disponibles sous licence
+  Open Database License (ODbL) 1.0 — https://www.openstreetmap.org/copyright
+- Base Adresse Nationale (BAN) : Licence Ouverte / Open Licence Etalab 2.0
+  — https://www.etalab.gouv.fr/licence-ouverte-open-licence
+- IGN (BD TOPO, RGE ALTI, orthophotographies, via la Géoplateforme) : Licence Ouverte /
+  Open Licence Etalab 2.0 — source : IGN
+- Plan cadastral informatisé (DGFiP, via la Géoplateforme) : Licence Ouverte / Open Licence
+  Etalab 2.0
+
+Les autres sources lues à l'exécution (base nationale des ZFE, registre parcellaire graphique,
+OSRM sur données OSM) le sont sous leurs licences respectives. Le code n'embarque aucune image
+Google ; les adaptateurs Street View et Elevation appellent
+les API de Google Maps Platform sous leurs propres conditions d'utilisation.

@@ -1,0 +1,29 @@
+// Exports morts — principe 25 (« des gardes mécaniques plutôt que de la vigilance »).
+//
+// Ce fichier ne dit pas ce qu'on tolère : il dit ce que knip ne peut pas deviner. Les faux
+// positifs connus se déclarent ICI — jamais dans `knip-baseline.json`, qui n'a le droit de
+// contenir que de la vraie dette. Règle de lecture : si une entrée d'ici disparaît et que
+// knip se met à signaler quelque chose, c'est que le quelque chose est réel.
+//
+// `npm run knip`          le rapport, sur tout le dépôt (non bloquant en CI).
+// `npm run knip:check`    le cliquet, bloquant, sur `packages/*/src` seulement.
+// `npm run knip:baseline` reprend la photo.
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "workspaces": {
+    // Les scripts de la racine : outillage, pas produit. Ce sont des points d'entrée.
+    ".": {
+      "entry": ["scripts/*.mjs", "eslint.config.mjs"],
+      "project": ["scripts/**/*.mjs"]
+    },
+    // Un paquet a une seule porte publique, `src/index.ts` — c'est ce qui rend la garde
+    // utile : un export que l'index ne rouvre pas et que personne n'importe est mort.
+    // `test/**/*.ts` en entier (pas seulement `*.test.ts`) : un helper de test comme
+    // `packages/routes/test/gate-corpus.ts` existe pour être importé par les tests, ses
+    // exports ne sont pas de la dette produit.
+    "packages/*": {
+      "entry": ["src/index.ts", "src/**/*.test.ts", "test/**/*.ts", "scripts/**/*.ts", "vitest.config.ts"],
+      "project": ["src/**/*.ts", "test/**/*.ts", "scripts/**/*.ts"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@teneolog/road-width",
+  "version": "0.0.0",
+  "private": true,
+  "description": "D10 road-width tile measurement (density profile + masks), shared by API and debug web.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./spatial-masks-parallel": {
+      "types": "./dist/spatial-masks-parallel.d.ts",
+      "default": "./dist/spatial-masks-parallel.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "vitest": "^2.1.0"
+  }
+}

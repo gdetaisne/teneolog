@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # Le moins cher d'abord (~2 s) : un fichier gelé qui grossit, une fonction qui
+      # dépasse les bornes de taille ou de complexité, et la CI refuse.
+      - name: Lint — cliquet de taille et de complexité
+        run: npm run lint
+      # Un export que rien n'importe ne se livre pas : bloquant sur packages/*/src.
+      - name: Knip — cliquet des exports morts
+        run: npm run knip:check
+      # Tout mécanisme « en silence » (drapeau à false dans la policy) doit être nommé
+      # et daté dans docs/METIER.md, sinon il s'accumule sans que personne ne tranche.
+      - name: Inventaire des modes en silence
+        run: npm run silence:check
+      # Compile tout le graphe de projets (tsc -b, strict, exactOptionalPropertyTypes),
+      # puis lance les tests de chaque paquet.
+      - run: npm test
+      - name: Knip — rapport complet (non bloquant)
+        if: always()
+        run: npm run knip

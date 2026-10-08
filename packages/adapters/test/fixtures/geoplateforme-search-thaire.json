@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.965414,
+          46.073482
+        ]
+      },
+      "properties": {
+        "label": "12 Rue de l’Exemple 17290 Thairé",
+        "score": 0.9493127272727272,
+        "housenumber": "12",
+        "id": "17443_9999_00012",
+        "banId": "00000000-0000-4000-8000-000000000000",
+        "name": "12 Rue de l’Exemple",
+        "postcode": "17290",
+        "citycode": "17443",
+        "x": 391000.0,
+        "y": 6560000.0,
+        "city": "Thairé",
+        "context": "17, Charente-Maritime, Nouvelle-Aquitaine",
+        "type": "housenumber",
+        "importance": 0.44244,
+        "depcode": "17",
+        "street": "Rue de l’Exemple",
+        "_type": "address"
+      }
+    }
+  ],
+  "query": "12 Rue de l’Exemple 17290 Thairé"
+}

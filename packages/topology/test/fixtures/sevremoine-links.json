@@ -1,0 +1,13 @@
+{
+  "source": "Tronçons BD TOPO (WFS Géoplateforme BDTOPO_V3:troncon_de_route, lus le 2026-09-25) sur l'emprise openSpaceExtent de sevremoine-open-space.json (rayon 32 m, disque lu 120 m), au sol seulement; closed = accès VL « Physiquement impossible » ou nature sans véhicule (GeoplateformeRoadLinks). .",
+  "links": [
+    {"id":"TRONROUT0000000011773098","nature":"Route à 1 chaussée","access":"Libre","closed":false,"lines":[[{"lat":47.1258123,"lon":-0.9463345},{"lat":47.1256956,"lon":-0.9462427},{"lat":47.1253012,"lon":-0.9458384}]]},
+    {"id":"TRONROUT0000000011773103","nature":"Route à 1 chaussée","access":"Libre","closed":false,"lines":[[{"lat":47.1261613,"lon":-0.9444227},{"lat":47.1257215,"lon":-0.9455697},{"lat":47.1257097,"lon":-0.9455727},{"lat":47.1256946,"lon":-0.9455663},{"lat":47.1255105,"lon":-0.9454154},{"lat":47.1254864,"lon":-0.945407}]]},
+    {"id":"TRONROUT0000000011774212","nature":"Sentier","access":"Physiquement impossible","closed":true,"lines":[[{"lat":47.1242777,"lon":-0.9459264},{"lat":47.1245097,"lon":-0.9463095},{"lat":47.1246577,"lon":-0.9469596}]]},
+    {"id":"TRONROUT0000000244769535","nature":"Route à 1 chaussée","access":"Libre","closed":false,"lines":[[{"lat":47.1253012,"lon":-0.9458384},{"lat":47.1249223,"lon":-0.9453771}]]},
+    {"id":"TRONROUT0000000329102793","nature":"Route à 1 chaussée","access":"Physiquement impossible","closed":true,"lines":[[{"lat":47.1253012,"lon":-0.9458384},{"lat":47.125467,"lon":-0.9454201},{"lat":47.1254864,"lon":-0.945407}]]},
+    {"id":"TRONROUT0000000356360087","nature":"Route à 1 chaussée","access":"Libre","closed":false,"lines":[[{"lat":47.1265257,"lon":-0.9469011},{"lat":47.1258123,"lon":-0.9463345}]]},
+    {"id":"TRONROUT0000000356360088","nature":"Route à 1 chaussée","access":"Libre","closed":false,"lines":[[{"lat":47.1258123,"lon":-0.9463345},{"lat":47.1258416,"lon":-0.9462706},{"lat":47.1260061,"lon":-0.9458377},{"lat":47.1260264,"lon":-0.9457996},{"lat":47.1260849,"lon":-0.9457246}]]},
+    {"id":"TRONROUT0000000011773112","nature":"Route à 1 chaussée","access":"Libre","closed":false,"lines":[[{"lat":47.1261161,"lon":-0.9471983},{"lat":47.1255512,"lon":-0.9465608},{"lat":47.1255259,"lon":-0.9465378},{"lat":47.1254754,"lon":-0.9465645},{"lat":47.1254218,"lon":-0.9467335},{"lat":47.1253394,"lon":-0.9476863},{"lat":47.1253494,"lon":-0.9478125},{"lat":47.1253753,"lon":-0.9479505},{"lat":47.1254188,"lon":-0.9480765},{"lat":47.1255023,"lon":-0.9482161},{"lat":47.1257837,"lon":-0.9486028}]]}
+  ]
+}

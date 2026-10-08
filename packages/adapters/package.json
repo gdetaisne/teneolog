@@ -1,0 +1,28 @@
+{
+  "name": "@teneolog/adapters",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Port implementations: Overpass road graph, BDTOPO PostGIS, geocoders. The only package where a network call may appear.",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@teneolog/domain": "*",
+    "@teneolog/topology": "*",
+    "@teneolog/pipeline": "*",
+    "@teneolog/road-width": "*",
+    "sharp": "^0.34.5",
+    "@teneolog/constraints": "*",
+    "@teneolog/routes": "*",
+    "@teneolog/scenes": "*"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.4",
+    "@types/node": "^20.14.0"
+  }
+}

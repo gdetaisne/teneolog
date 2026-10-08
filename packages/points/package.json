@@ -1,0 +1,17 @@
+{
+  "name": "@teneolog/points",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "S4 — critical points along the candidates: turns, roundabouts, narrows, the destination, the turnaround. Location-keyed identity so human judgements outlive runs.",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": { ".": { "types": "./dist/src/index.d.ts", "default": "./dist/src/index.js" } },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": { "@teneolog/domain": "*", "@teneolog/topology": "*" },
+  "devDependencies": { "vitest": "^2.1.4" }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@teneolog/report",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "S6 — the conclusion, readable. French user-facing rendering of a RunConclusion; derived from facts, never authored.",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": { ".": { "types": "./dist/src/index.d.ts", "default": "./dist/src/index.js" } },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": { "@teneolog/domain": "*" },
+  "devDependencies": { "vitest": "^2.1.4" }
+}

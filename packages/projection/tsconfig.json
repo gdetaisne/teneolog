@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": ".", "outDir": "dist", "composite": true },
+  "references": [
+    { "path": "../domain" },
+    { "path": "../points" },
+    { "path": "../swept-path" },
+    { "path": "../topology" }
+  ],
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

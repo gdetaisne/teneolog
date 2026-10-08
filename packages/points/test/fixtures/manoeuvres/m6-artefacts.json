@@ -1,0 +1,229 @@
+{
+  "origine": {
+    "lat": 46.0,
+    "lon": 0.0
+  },
+  "noteCoordonnees": "Sommets en mètres locaux [est, nord] depuis `origine` — c'est ce qui rend la fixture lisible à l'œil. Conversion : lat = origine.lat + nord/111320 ; lon = origine.lon + est/(111320·cos 46°) = origine.lon + est/77327,6.",
+  "cas": "M6 — ce qui n'est pas une manœuvre",
+  "commentaire": "Quatre formes qui produisent un angle sans qu'aucun camion ne tourne. Aucune ne doit poser de point.",
+  "variantes": [
+    {
+      "cas": "M6-a",
+      "titre": "arrondi de raccordement au départ (snap du routeur)",
+      "voies": [
+        {
+          "id": "w-rue",
+          "nom": "Rue Droite",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "w-rue:n0",
+            "w-rue:n1",
+            "w-rue:n2"
+          ],
+          "sommets": [
+            [0, 0],
+            [0, 120],
+            [0, 240]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Le premier segment de 4 m rejoint la chaussée depuis le trottoir de la destination : 90° de cap, 4 m de long, à moins de 12 m de l'origine de la jambe. C'est un artefact de raccordement, et il doit l'être dans les DEUX sens (§6 de juin).",
+        "sommets": [
+          [-4, 0],
+          [0, 0],
+          [0, 60],
+          [0, 120],
+          [0, 240]
+        ]
+      }
+    },
+    {
+      "cas": "M6-b",
+      "titre": "sommet répété",
+      "voies": [
+        {
+          "id": "w-rue",
+          "nom": "Rue Droite",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "w-rue:n0",
+            "w-rue:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [0, 120]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Le sommet (0,50) est émis deux fois : sans cap, `bearingDeg` répond 0° — le nord — et inventait un virage.",
+        "sommets": [
+          [0, 0],
+          [0, 50],
+          [0, 50],
+          [0, 80],
+          [0, 120]
+        ]
+      }
+    },
+    {
+      "cas": "M6-c",
+      "titre": "zigzag de polyligne sur une rue droite",
+      "voies": [
+        {
+          "id": "w-rue",
+          "nom": "Rue Droite",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "w-rue:n0",
+            "w-rue:n1"
+          ],
+          "sommets": [
+            [0, 0],
+            [0, 120]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "Tous les 5 m, 1,5 m à gauche puis à droite : des déflexions de ~33° qui s'annulent deux à deux.",
+        "sommets": [
+          [0, 0],
+          [1.5, 5.0],
+          [-1.5, 10.0],
+          [1.5, 15.0],
+          [-1.5, 20.0],
+          [1.5, 25.0],
+          [-1.5, 30.0],
+          [1.5, 35.0],
+          [-1.5, 40.0],
+          [1.5, 45.0],
+          [-1.5, 50.0],
+          [1.5, 55.0],
+          [-1.5, 60.0],
+          [1.5, 65.0],
+          [-1.5, 70.0],
+          [1.5, 75.0],
+          [-1.5, 80.0],
+          [1.5, 85.0],
+          [-1.5, 90.0],
+          [1.5, 95.0],
+          [-1.5, 100.0],
+          [1.5, 105.0],
+          [-1.5, 110.0],
+          [1.5, 115.0],
+          [-1.5, 120.0]
+        ]
+      }
+    },
+    {
+      "cas": "M6-d",
+      "titre": "courbe douce de 150 m de rayon, 50° balayés",
+      "voies": [
+        {
+          "id": "w-courbe",
+          "nom": "Route Ondulante",
+          "largeurDeclareeM": 5.0,
+          "tags": {
+            "highway": "residential",
+            "width": "5.0"
+          },
+          "noeuds": [
+            "w-courbe:n0",
+            "w-courbe:n1",
+            "w-courbe:n2",
+            "w-courbe:n3",
+            "w-courbe:n4",
+            "w-courbe:n5",
+            "w-courbe:n6",
+            "w-courbe:n7",
+            "w-courbe:n8",
+            "w-courbe:n9",
+            "w-courbe:n10",
+            "w-courbe:n11",
+            "w-courbe:n12",
+            "w-courbe:n13",
+            "w-courbe:n14",
+            "w-courbe:n15",
+            "w-courbe:n16",
+            "w-courbe:n17",
+            "w-courbe:n18",
+            "w-courbe:n19",
+            "w-courbe:n20",
+            "w-courbe:n21",
+            "w-courbe:n22",
+            "w-courbe:n23",
+            "w-courbe:n24",
+            "w-courbe:n25",
+            "w-courbe:n26",
+            "w-courbe:n27",
+            "w-courbe:n28",
+            "w-courbe:n29",
+            "w-courbe:n30"
+          ],
+          "sommets": [
+            [0.0, -60.0],
+            [0.0, -30.0],
+            [0.0, 0.0],
+            [0.08, 5.03],
+            [0.34, 10.06],
+            [0.76, 15.08],
+            [1.35, 20.08],
+            [2.11, 25.06],
+            [3.03, 30.0],
+            [4.12, 34.92],
+            [5.37, 39.79],
+            [6.79, 44.63],
+            [8.37, 49.41],
+            [10.11, 54.13],
+            [12.0, 58.79],
+            [14.05, 63.39],
+            [16.26, 67.92],
+            [18.61, 72.37],
+            [21.11, 76.74],
+            [23.76, 81.02],
+            [26.55, 85.21],
+            [29.48, 89.3],
+            [32.55, 93.3],
+            [35.74, 97.19],
+            [39.07, 100.97],
+            [42.52, 104.63],
+            [46.09, 108.18],
+            [49.78, 111.61],
+            [53.58, 114.91],
+            [76.56, 134.19],
+            [99.54, 153.47]
+          ]
+        }
+      ],
+      "itineraire": {
+        "commentaire": "50° franchissent le seuil de détection ; le rayon dit qu'il n'y a rien à signaler (déport 12 cm).",
+        "sommets": [
+          [0.0, -60.0],
+          [0.0, -30.0],
+          [0.0, 0.0],
+          [1.35, 20.08],
+          [5.37, 39.79],
+          [12.0, 58.79],
+          [21.11, 76.74],
+          [32.55, 93.3],
+          [46.09, 108.18],
+          [76.56, 134.19],
+          [99.54, 153.47]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "origine": {
+    "lat": 46.0,
+    "lon": 0.0
+  },
+  "noteCoordonnees": "Sommets en mètres locaux [est, nord] depuis `origine` — c'est ce qui rend la fixture lisible à l'œil. Conversion : lat = origine.lat + nord/111320 ; lon = origine.lon + est/(111320·cos 46°) = origine.lon + est/77327,6.",
+  "cas": "M2 — la courbe entre nœuds",
+  "commentaire": "UNE seule voie, aucun nœud partagé dans le virage : un arc de 30 m de rayon balayant 60°, entre deux droites de 40 m, tangentes exactes. La voie porte ses sommets tous les 4 m — c'est SUR EUX que l'ajustement de cercle se fait, et il rend 30,00 m (rms 0,002 m). Le routeur, lui, ne rend qu'un sommet tous les 15 m, et une corde tirée sur sa fenêtre rend 47 m : une courbe deux fois trop douce, donc un doute effacé.",
+  "voies": [
+    {
+      "id": "w-courbe",
+      "nom": "Route de la Courbe",
+      "largeurDeclareeM": 4.5,
+      "tags": {
+        "highway": "residential",
+        "width": "4.5"
+      },
+      "noeuds": [
+        "w-courbe:n0",
+        "w-courbe:n1",
+        "w-courbe:n2",
+        "w-courbe:n3",
+        "w-courbe:n4",
+        "w-courbe:n5",
+        "w-courbe:n6",
+        "w-courbe:n7",
+        "w-courbe:n8",
+        "w-courbe:n9",
+        "w-courbe:n10",
+        "w-courbe:n11",
+        "w-courbe:n12"
+      ],
+      "sommets": [
+        [0.0, -40.0],
+        [0.0, -20.0],
+        [0.0, 0.0],
+        [0.26, 3.92],
+        [1.02, 7.76],
+        [2.28, 11.48],
+        [4.02, 15.0],
+        [6.2, 18.26],
+        [8.79, 21.21],
+        [11.74, 23.8],
+        [15.0, 25.98],
+        [32.32, 35.98],
+        [49.64, 45.98]
+      ]
+    },
+    {
+      "id": "w-autre",
+      "nom": "Rue Débouchante",
+      "largeurDeclareeM": 4.0,
+      "tags": {
+        "highway": "residential",
+        "width": "4.0"
+      },
+      "noeuds": [
+        "w-courbe:n12",
+        "w-autre:n1"
+      ],
+      "sommets": [
+        [49.64, 45.98],
+        [79.64, 75.98]
+      ]
+    }
+  ],
+  "itineraire": {
+    "commentaire": "Le tracé du routeur, un sommet tous les 15 m.",
+    "sommets": [
+      [0.0, -40.0],
+      [0.0, -20.0],
+      [0.0, 0.0],
+      [4.02, 15.0],
+      [15.0, 25.98],
+      [32.32, 35.98],
+      [49.64, 45.98]
+    ]
+  }
+}
